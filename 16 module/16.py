@@ -111,22 +111,22 @@
 # Напишите программу, которая генерирует списки роста для каждого в классе, затем объединяет их в один список
 # и сортирует его в порядке возрастания. Выведите отсортированный список на экран.
 
-# class1 = list(range(160, 176, 2))
-# class2 = list(range(162, 180, 3))
-#
-# print(class1)
-# print(class2)
-# class1.extend(class2)
-# max = 0
-# min = 0
-# print(class1)
-# for ii in range(len(class1)):
-#     for i in range(0,len(class1)-1,1):
-#         if class1[i] > class1[i+1]:
-#             class1[i], class1[i + 1] = class1[i + 1], class1[i]
-#
-# print(class1)
-#
+class1 = list(range(160, 176, 2))
+class2 = list(range(162, 180, 3))
+
+print(class1)
+print(class2)
+class1.extend(class2)
+max = 0
+min = 0
+print(class1)
+for ii in range(len(class1)):
+    for i in range(0,len(class1)-1,1):
+        if class1[i] > class1[i+1]:
+            class1[i], class1[i + 1] = class1[i + 1], class1[i]
+
+print(class1)
+
 # Задача 3. Детали
 # В базе данных магазина всякой всячины хранится список названий деталей и их стоимостей:
 # shop = [['каретка', 1200], ['шатун', 1000], ['седло', 300], ['педаль', 100], ['седло', 1500], ['рама', 12000], ['обод', 2000], ['шатун', 200], ['седло', 2700]]
@@ -153,3 +153,5 @@
 #
 # print(count)
 # print(price)
+
+
