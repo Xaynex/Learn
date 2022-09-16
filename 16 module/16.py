@@ -111,21 +111,21 @@
 # Напишите программу, которая генерирует списки роста для каждого в классе, затем объединяет их в один список
 # и сортирует его в порядке возрастания. Выведите отсортированный список на экран.
 
-class1 = list(range(160, 176, 2))
-class2 = list(range(162, 180, 3))
-
-print(class1)
-print(class2)
-class1.extend(class2)
-max = 0
-min = 0
-print(class1)
-for ii in range(len(class1)):
-    for i in range(0,len(class1)-1,1):
-        if class1[i] > class1[i+1]:
-            class1[i], class1[i + 1] = class1[i + 1], class1[i]
-
-print(class1)
+# class1 = list(range(160, 176, 2))
+# class2 = list(range(162, 180, 3))
+#
+# print(class1)
+# print(class2)
+# class1.extend(class2)
+# max = 0
+# min = 0
+# print(class1)
+# for ii in range(len(class1)):
+#     for i in range(0,len(class1)-1,1):
+#         if class1[i] > class1[i+1]:
+#             class1[i], class1[i + 1] = class1[i + 1], class1[i]
+#
+# print(class1)
 
 # Задача 3. Детали
 # В базе данных магазина всякой всячины хранится список названий деталей и их стоимостей:
@@ -154,4 +154,26 @@ print(class1)
 # print(count)
 # print(price)
 
+# задача 4
+
+# def check(ask):
+#     if (ask != 'ушел' or ask == 'пришел') and len(guests)>5:
+#         print('места нет')
+#
+# guests = ['Петя', 'Ваня', 'Саша', 'Лиза', 'Катя']
+# ask=str
+# while ask!='пора спать':
+#     ask = input('гость пришел или ушел? ')
+#     if ask == 'пора спать':
+#         quit()
+#     name = input('имя гостя ')
+#     check(ask)
+#     if ask == 'пришел' and len(guests)<=5:
+#         guests.append(name)
+#         print('заходи')
+#         print(guests)
+#     if ask == 'ушел':
+#         guests.remove(name)
+#         print('пока')
+#         print(guests)
 
