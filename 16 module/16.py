@@ -177,14 +177,13 @@
 #         print('пока')
 #         print(guests)
 
+
 # Задача 5. Песни
 def search(song):
     time = 0
     for i in range(9):
         if violator_songs[i][0] == song:
             return violator_songs[i][1]
-
-
 violator_songs = [
     ['World in My Eyes', 4.86],
     ['Sweetest Perfection', 4.43],
@@ -203,3 +202,17 @@ for i in range(1, N + 1):
     time = search(song)
     total += time
 print('общее время', round(total,2))
+
+# Задача 6. Уникальные элементы
+# first_list = [1,2,3]
+# # second_list = [2, 4, 6, 3, 3, 2, 1]
+# second_list = [3,4,3,3]
+#
+#
+# print('Первый список:', first_list, '\nВторой список:', second_list)
+# first_list.extend(second_list)
+# for number in first_list:
+#     for quantity_remove in range(first_list.count(number) - 1):
+#         first_list.remove(number)
+#         print(first_list)
+
