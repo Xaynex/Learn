@@ -177,3 +177,15 @@
 #         print('пока')
 #         print(guests)
 
+# Задача 6. Уникальные элементы
+# first_list = [1,2,3]
+# # second_list = [2, 4, 6, 3, 3, 2, 1]
+# second_list = [3,4,3,3]
+#
+#
+# print('Первый список:', first_list, '\nВторой список:', second_list)
+# first_list.extend(second_list)
+# for number in first_list:
+#     for quantity_remove in range(first_list.count(number) - 1):
+#         first_list.remove(number)
+#         print(first_list)
