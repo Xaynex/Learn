@@ -177,3 +177,29 @@
 #         print('пока')
 #         print(guests)
 
+# Задача 5. Песни
+def search(song):
+    time = 0
+    for i in range(9):
+        if violator_songs[i][0] == song:
+            return violator_songs[i][1]
+
+
+violator_songs = [
+    ['World in My Eyes', 4.86],
+    ['Sweetest Perfection', 4.43],
+    ['Personal Jesus', 4.56],
+    ['Halo', 4.9],
+    ['Waiting for the Night', 6.07],
+    ['Enjoy the Silence', 4.20],
+    ['Policy of Truth', 4.76],
+    ['Blue Dress', 4.29],
+    ['Clean', 5.83]]
+N = int(input('сколько песен выбрать '))
+total = 0
+for i in range(1, N + 1):
+    print('название', i, 'песни ', end='')
+    song = input()
+    time = search(song)
+    total += time
+print('общее время', round(total,2))
