@@ -234,3 +234,26 @@
 #             print('не подошло')
 #
 # print(count)
+
+# Задача 8. Считалка
+
+# def play(people,K):
+#     count=0
+#     while len(people)>1:
+#         for i in range(len(people)):
+#             count+=1
+#             if count==K:
+#                 people.remove(people[i])
+#                 print(people)
+#                 count=0
+#
+#
+# N=int(input('количество человек '))
+# people=list(range(1,N+1))
+# K=int(input('число '))
+# print('список человек ',people)
+# print('значит выбывает каждый',K, 'человек')
+#
+# play(people,K)
+
+
