@@ -49,3 +49,47 @@
 # print(squad_1)
 # print(squad_2)
 # print(squad_3)
+
+# Задача 3.1 Анализ цен
+
+# import random
+#
+# original_prices = [random.randint(-10,10) for i in range(5)]
+# new_prices = original_prices[:]
+# for i in range(len(original_prices)):
+#     if new_prices[i] < 0:
+#         new_prices[i] = 0
+# print(original_prices)
+#
+# print("Мы потеряли: ",  abs(sum(original_prices) - sum(new_prices)))
+
+# Задача 3.2 Срезы
+
+# nums = [48, -10, 9, 38, 17, 50, -5, 43, 46, 12]
+#
+# # 1.	В первой строке выведите первые пять элементов списка.
+# # 2.	Во второй строке выведите весь список, кроме последних двух элементов.
+# # 3.	В третьей строке выведите все элементы с чётными индексами.
+# # 4.	В четвёртой строке выведите все элементы с нечётными индексами.
+# # 5.	В пятой строке выведите все элементы в обратном порядке.
+# # 6.	В шестой строке выведите все элементы списка через один в обратном порядке, начиная с последнего.
+#
+# print(nums[:5])
+# print(nums[:8])
+# print(nums[::2])
+# print(nums[1::2])
+# print(nums[::-1])
+# print(nums[::-2])
+
+# Задача 3. Удаление части
+# import random
+# listt=[random.randint(0,10) for i in range(10)]
+# B=random.randint(7,10)
+# A=random.randint(0,6)
+#
+# new=listt[:]
+#
+# print(new)
+# print(A,B)
+# print(new[:A]+new[B+1:])
+
