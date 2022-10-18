@@ -75,3 +75,160 @@
 #         quit()
 #     number = input('Введите номер телефона: ')
 #     phones[name] = number
+# задача 1
+# small_storage = {
+#     'гвозди': 5000,
+#     'шурупы': 3040,
+#     'саморезы': 2000
+# }
+#
+# big_storage = {
+#     'доски': 1000,
+#     'балки': 150,
+#     'рейки': 600
+# }
+#
+#
+# big_storage.update(small_storage)
+# print(big_storage)
+# name= input('введите название товара ')
+# if name in big_storage:
+#     print(big_storage.get(name))
+# else:
+#     print('ошибка')
+
+# Задача 2. Кризис фруктов
+# incomes = {
+#     'apple': 5600.20,
+#     'orange': 3500.45,
+#     'banana': 5000.00,
+#     'bergamot': 3700.56,
+#     'durian': 5987.23,
+#     'grapefruit': 300.40,
+#     'peach': 10000.50,
+#     'pear': 1020.00,
+#     'persimmon': 310.00,
+# }
+# total = sum(incomes.values())
+# print('общий доход ', total)
+# minn=''
+# for key in incomes:
+#     if incomes[key]==min(incomes.values()):
+#         minn=key
+# print('Самый маленький доход у', minn, 'он составляет', min(incomes.values()))
+# incomes.pop(minn)
+# print('иног', incomes)
+
+# Задача 3. Гистограмма частоты
+# text=input('введите текст ').lower()
+# sym_dict=dict()
+#
+# for sym in text:
+#     if sym in sym_dict:
+#         sym_dict[sym]+=1
+#     else:
+#         sym_dict[sym] = 1
+#
+# for i in sym_dict:
+#
+#     print(i,':', sym_dict[i])
+# print(max(sym_dict.values()))
+
+# Задача 1. Член семьи
+
+# Задача 2. Игроки
+# Есть готовый словарь игроков, у каждого игрока есть имя, команда, в которой он играет,
+# а также его текущий статус, в котором указано, отдыхает он, тренируется или путешествует:
+
+# players_dict = {
+#     1: {'name': 'Vanya', 'team': 'A', 'status': 'Rest'},
+#     2: {'name': 'Lena', 'team': 'B', 'status': 'Training'},
+#     3: {'name': 'Maxim', 'team': 'C', 'status': 'Travel'},
+#     4: {'name': 'Egor', 'team': 'C', 'status': 'Rest'},
+#     5: {'name': 'Andrei', 'team': 'A', 'status': 'Training'},
+#     6: {'name': 'Sasha', 'team': 'A', 'status': 'Rest'},
+#     7: {'name': 'Alina', 'team': 'B', 'status': 'Rest'},
+#     8: {'name': 'Masha', 'team': 'C', 'status': 'Travel'}
+# }
+#
+# print('Все члены команды из команды А, которые отдыхают ')
+# for i in players_dict:
+#     if players_dict.get(i).get('team')=='A' and players_dict.get(i).get('status')=='Rest':
+#         print(players_dict.get(i).get('name'))
+# print('Все члены команды из группы B, которые тренируются.')
+# for i in players_dict:
+#     if players_dict.get(i).get('team')=='B' and players_dict.get(i).get('status')=='Training':
+#         print(players_dict.get(i).get('name'))
+# print('Все члены команды из команды C, которые путешествуют.')
+# for i in players_dict:
+#     if players_dict.get(i).get('team')=='C' and players_dict.get(i).get('status')=='Travel':
+#         print(players_dict.get(i).get('name'))
+
+#
+# Задача 1. Пунктуация
+# Напишите программу, которая считает количество знаков пунктуации в символьной строке.
+# К знакам пунктуации относятся символы из набора ".,;:!?". Набор должен храниться в виде множества.
+#
+# Пример:
+# Введите строку: Я! Есть. Грут?! Я, Грут и Есть.
+#
+# Количество знаков пунктуации: 6
+
+# a = set('.,;:!?')
+# stroka = 'Я! Есть. Грут?! Я, Грут и Есть.'
+# k = 0
+# for x in stroka:
+#     if x in a:
+#         k += 1
+# print(k)
+
+# Задача 2. Семинар
+# На одном семинаре по теории множеств нужно показать наглядный пример, как эти множества работают.
+# Для начала было сгенерировано два набора чисел:
+#
+# nums_1 = [29, 17, 10, 15, 13, 22, 12, 22, 7, 24, 26, 3, 11, 2, 3, 16, 19, 21, 2, 3, 8, 27, 2, 17, 2, 20, 12, 21, 3, 1]
+# nums_2 = [16, 21, 30, 24, 5, 7, 23, 13, 11, 5, 21, 5, 19, 9, 12, 9, 15, 16, 29, 8, 16, 1, 22, 15, 16, 9, 1, 13, 21, 21]
+
+# Напишите программу, которая преобразует списки во множества и убирает повторяющиеся элементы.
+# Затем удаляет минимальный элемент из каждого множества и добавляет туда случайное число в диапазоне от 100 до 200.
+# Затем выполните следующие действия со множествами:
+# 1.	Вывести все элементы множеств (объединение).
+# 2.	Вывести только общие элементы (пересечение).
+# 3.	Вывести элементы, входящие в nums_2, но не входящие в nums_1.
+# import random
+# set_1=set(nums_1)
+# set_2=set(nums_2)
+#
+# print('1 множество', set_1)
+# print('2 множество', set_2)
+#
+# print('минимальный элемент 1 множества', min(set_1))
+# print('минимальный элемент 2 множества', min(set_2))
+#
+# set_1.remove(min(set_1))
+# set_2.remove(min(set_2))
+#
+# set_1.add(random.randint(100,200))
+# set_2.add(random.randint(100,200))
+#
+# print(set_1 | set_2)
+# print(set_1 & set_2)
+# print(set_2 - set_1)
+
+# Задача 3. Различные цифры
+# Напишите программу, которая находит все различные цифры в символьной строке.
+# Для решения используйте множество (цифры будут различные, и поиск во множестве намного быстрее, чем в списке).
+#
+# Подсказка: можно использовать вот такое сравнение '0'<=x<='9'
+#
+# Пример:
+# Введите строку: ab1n32kz2
+# Различные цифры строки: 123
+
+# stroka = 'ab1n32kz2'
+# b = set()
+# for i in stroka:
+#     if '0' <= i <= '9':
+#         b.add(i)
+# for i in b:
+#     print(i, end='')
